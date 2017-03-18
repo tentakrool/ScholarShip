@@ -1,2 +1,20 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>ScholarShip Home</title>
+	</head>
+
+	<body>
+		<h1>Home Page</h1>
+		<ul> 
+			<li><%= link_to "Log In", '/Login', :method => :get %></li>
+			<li><%= link_to "Sign Up", '/SignUp', :method => :get %></li>
+	    </ul>
+		<p>Find me in app/views/static_pages/home.html.erb</p>
+		<p>You have two choices:</p>
+		<p>To view the books by genres click <%= link_to "Genres", '/genre', :method => :get %></p>
+		<p>To view the accessories click <%= link_to "Accessories", '/accessories', :method => :get %></p> 
+	</body>
+
+</html>
