@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order_id: MyString
+  primary_key: MyString
+  order_no: 1
+  order_date: 2017-03-18
+  shipping_date: 2017-03-18
+  payment_date: 2017-03-18
+  bookmark_id: MyString
+  foreign_key: MyString
+  bookmark_name: MyString
+  bookmark_unit: 1
+  bookmark_mrp: 1
+  ntbk_id: MyString
+  foreign_key: MyString
+  ntbk_name: MyString
+  ntbk_unit: 1
+  ntbk_mrp: 1
+  book_id: MyString
+  foreign_key: MyString
+  book_name: MyString
+  book_unit: 1
+  book_mrp: 1
+
+two:
+  order_id: MyString
+  primary_key: MyString
+  order_no: 1
+  order_date: 2017-03-18
+  shipping_date: 2017-03-18
+  payment_date: 2017-03-18
+  bookmark_id: MyString
+  foreign_key: MyString
+  bookmark_name: MyString
+  bookmark_unit: 1
+  bookmark_mrp: 1
+  ntbk_id: MyString
+  foreign_key: MyString
+  ntbk_name: MyString
+  ntbk_unit: 1
+  ntbk_mrp: 1
+  book_id: MyString
+  foreign_key: MyString
+  book_name: MyString
+  book_unit: 1
+  book_mrp: 1

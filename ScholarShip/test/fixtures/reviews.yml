@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  review_id: MyString
+  primary_key: MyString
+  book_id: MyString
+  foreign: MyString
+  key: MyString
+  ntbk_id: MyString
+  foreign_key: MyString
+  bookmark_id: MyString
+  foreign_key: MyString
+  customer_id: MyString
+  foreign_key: MyString
+  rating: 1
+  date_written: 2017-03-18
+  content: MyText
+
+two:
+  review_id: MyString
+  primary_key: MyString
+  book_id: MyString
+  foreign: MyString
+  key: MyString
+  ntbk_id: MyString
+  foreign_key: MyString
+  bookmark_id: MyString
+  foreign_key: MyString
+  customer_id: MyString
+  foreign_key: MyString
+  rating: 1
+  date_written: 2017-03-18
+  content: MyText
