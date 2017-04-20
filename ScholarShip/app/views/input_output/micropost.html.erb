@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
   		<meta name="viewport" content="width=device-width, initial-scale=1">
   		<% content_for:stylesheets do %>
-  			<%= stylesheet_link_tag "homepage.css" %>
+  			<%= stylesheet_link_tag "micropost.css" %>
   		<%end%>
 	</head>
 
@@ -26,8 +26,6 @@
 
 					<li><%= link_to "Contact Us",'/contactus', :method => :get %> </li> 
 					<li><%= link_to "About Us", '/aboutus', :method => :get %></li>
-					<li><%= link_to "Log In",'/Login', :method => :get %> </li> 
-					<li><%= link_to "Sign Up", '/SignUp', :method => :get %></li>
 				</ul>
 			</nav>
 		</div>
@@ -35,10 +33,7 @@
 
 	<body>
 		<div class="container-fluid">   
-		  	<div class="row">
-		    	<div class="col-sm-6">
-		    	</div>
-		    </div>
+		  
 		</div>
 	</body>
 	<footer class=" container-fluid text-right">

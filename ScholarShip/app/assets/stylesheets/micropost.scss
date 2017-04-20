@@ -1,0 +1,19 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+li:hover
+{
+  background-color: #ffa64d;
+}
+
+.jumbotron 
+{
+  margin-bottom: 0;
+  background-color:#71a1b7;
+}

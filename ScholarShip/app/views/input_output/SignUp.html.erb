@@ -1,2 +1,79 @@
-<h1>InputOutput#SignUp</h1>
-<p>Find me in app/views/input_output/SignUp.html.erb</p>
+<html>
+	<head>
+		<% content_for:stylesheets do %>
+  			<%= stylesheet_link_tag "signup.css" %>
+  		<%end%>
+  	</head>
+	<header class="navbar navbar-fixed-top navbar-inverse">
+		<!--div class="jumbotron">
+			<div class="conatiner text-center">
+			   	<h2>The ScholarShip</h2> 
+			</div>
+		</div-->
+
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand">ScholarShip</a>
+			</div>
+			<nav>
+				<ul class="nav navbar-nav navbar-right">
+					<li><%= link_to "About Us", '/aboutus', :method => :get %></li>
+					<li><%= link_to "Contact Us",'/contactus', :method => :get %> </li> 
+					<li><%= link_to "Home", '/Home', :method => :get %></li>
+					<li><%= link_to "Log In",'/Login', :method => :get %> </li> 
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<body>
+	<div class="row container-fluid">
+		<div class="col-sm-4 col-sm-offset-4">
+			<div class="signup container-fluid">
+				<h2 class="text-center">Sign Up</h2>
+					<%= form_for() do |f| %> 
+					<%= f.label :first_name,"First name:" %>
+					<%= f.text_field :first_name %>
+					
+					<%= f.label :last_name,"Last name:" %>
+					<%=f.text_field :last_name %>
+					
+					<%= f.label :email,"Email:" %>
+					<%= f.email_field :email %>
+					
+					<%= f.label :phone,"Phone no:"%>
+					<%= f.text_field :phone %>
+
+					<%= f.label :city,"City:" %>
+					<%= f.text_field :city %>
+					
+					<%= f.label :addr_1,"Address 1:" %>
+					<%=f.text_field :addr_1 %>
+					
+					<%= f.label :addr_2,"Address 2:" %>
+					<%= f.text_field :addr_2 %>
+					
+					<%= f.label :state,"State:"%>
+					<%= f.text_field :state %>
+
+					<%= f.label :postal_code,"Postal Code:"%>
+					<%= f.text_field :postal_code %>
+					
+					<%= f.label :password,"Password:"%>
+					<%= f.password_field :password %>
+
+				    <%= f.label :password_confirmation, "Confirmation:" %>
+					<%= f.password_field :password_confirmation, class: 'form-control' %>
+					
+				    <!--%= f.submit "Create my account",  class: "btn btn-primary" %> 
+				    <!--%= link_to "View Profile",input_output_micropost_path%-->
+				    <%= f.submit "Sign up", class: "btn btn-primary" %>
+				<% end %>
+			</div>
+		</div>
+		<footer class="container-fluid text-right">
+			<p>Copyright &copy; The ScholarShip </p>
+		</footer>
+	</div>
+	</body>
+	
+<html>

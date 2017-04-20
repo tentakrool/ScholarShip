@@ -1,23 +1,22 @@
 Rails.application.routes.draw do
- 
-  root 'static_pages#home'
-
-  get 'static_pages/home'
-  get 'static_pages/genre'
-  get 'static_pages/accessories'
-
-  get 'input_output/Login'
-  get 'input_output/SignUp'
-  #get 'input_output/new'
-
-  get '/genre', to: 'static_pages#genre' #request dispatched to static_pages controller's genre action
-  get '/accessories', to: 'static_pages#accessories' #request dispatched to static_pages controller's accessories action
-
-  get '/Login', to: 'input_output#Login' #request dispatched to in
-  get '/SignUp', to: 'input_output#SignUp'
   
-  
+  root to: 'static_pages#home'
+   get '/genre', to: 'static_pages#genre' 
+   get '/accessories', to: 'static_pages#accessories'
+   get '/aboutus', to: 'static_pages#aboutus'
+   get '/contactus', to: 'static_pages#contactus'
 
-  #get 'sessions/new'
+   get '/Home', to: 'static_pages#home'
+   get '/Login', to: 'input_output#Login' 
+   get '/micropost', to: 'input_output#micropost'
+   get '/SignUp', to: 'input_output#SignUp'
+   get '/Home', to: 'static_pages#home'
+   get '/Login', to: 'input_output#Login' 
+   get '/micropost', to: 'input_output#micropost'
+  ##################################################
+  #### Action for the form is set as post, so signup
+  #### must be a post route
+  ##################################################
+   post '/SignUp', to: 'input_output#SignUp'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
